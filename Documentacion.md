@@ -1,8 +1,8 @@
 # ListHandle
 
-##Games
+## Games
 
-###Listar todos los juegos
+### Listar todos los juegos
 **GET**
 ```
 endpoint: /api/games/
@@ -28,7 +28,7 @@ Ejemplo:
 ]
 ```
 
-###Obtener un juego
+### Obtener un juego
 **GET**
 ```
 endpoint: /api/games/game/{id}
@@ -46,7 +46,7 @@ Ejemplo:
     "platform": "Play Station 4"
 }
 ```
-###Insertar un juego
+### Insertar un juego
 **POST**
 ```
 endpoint: /api/games/game
@@ -71,7 +71,7 @@ Ejemplo:
     "platform": "Play Station 4"
 }
 ```
-###Actualizar un juego
+### Actualizar un juego
 **PUT**
 ```
 endpoint: /api/games/game/{id}
@@ -95,7 +95,7 @@ Ejemplo:
     "platform": "Switch"
 }
 ```
-###Eliminar un juego
+### Eliminar un juego
 **DELETE**
 ```
 endpoint: /api/games/game/{id}
