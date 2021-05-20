@@ -1,5 +1,6 @@
 package list.handle.api.game.controllers;
 
+import list.handle.api.game.models.GameInfoDTO;
 import list.handle.api.game.services.FilterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -23,5 +24,10 @@ public class FilterController {
     @GetMapping("/pegis")
     public ResponseEntity<List<String>> getAllPegis() {
         return ResponseEntity.ok(service.getAllPegis());
+    }
+
+    @GetMapping("/game")
+    public ResponseEntity<List<GameInfoDTO>> listGames(@RequestParam(value = "platform", required = false) String platform, @RequestParam(value = "pegi", required = false) String pegi) {
+        return ResponseEntity.ok(service.listGames(platform, pegi));
     }
 }
