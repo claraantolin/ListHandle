@@ -3,8 +3,10 @@ package list.handle.api.game.services;
 import list.handle.api.game.models.GameInfoDTO;
 import list.handle.api.game.repositories.IGameInfoDAO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -41,6 +43,7 @@ public class GameServiceImpl implements GameService {
     GameInfoDTO fillGameInfo(GameInfoDTO updatedGame, GameInfoDTO gameInfo){
         updatedGame.setName(gameInfo.getName() == null ? updatedGame.getName() : gameInfo.getName());
         updatedGame.setPlatform(gameInfo.getPlatform() == null ? updatedGame.getPlatform() : gameInfo.getPlatform());
+        updatedGame.setPegi(gameInfo.getPegi() == null ? updatedGame.getPegi() : gameInfo.getPegi());
         return updatedGame;
     }
 }

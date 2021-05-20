@@ -1,6 +1,6 @@
 # ListHandle
 
-## Games
+## JUEGOS
 
 ### Listar todos los juegos
 **GET**
@@ -18,12 +18,26 @@ Ejemplo:
     {
         "id": "60a28f63028d1229daab9608",
         "name": "Uncharted",
-        "platform": "Play Station 4"
+        "platform": "Play Station 4",
+        "pegi": "18+"
     },
     {
         "id": "60a35e8e96d3b160b7527dee",
         "name": "Until Dawn",
-        "platform": "Play Station 4"
+        "platform": "Play Station 4",
+        "pegi": "16+"
+    },
+    {
+        "id": "60a6782f9b3bf02de1de8ecb",
+        "name": "SOMA",
+        "platform": "Play Station 3",
+        "pegi": "18+"
+    },
+    {
+        "id": "60a678399b3bf02de1de8ecc",
+        "name": "Mario",
+        "platform": "Switch",
+        "pegi": "7+"
     }
 ]
 ```
@@ -43,7 +57,8 @@ Ejemplo:
 {
     "id": "60a28f63028d1229daab9608",
     "name": "Uncharted",
-    "platform": "Play Station 4"
+    "platform": "Play Station 4",
+    "pegi": "18+"
 }
 ```
 ### Insertar un juego
@@ -60,7 +75,8 @@ Ejemplo:
 ```
 {
     "name": "Until Dawn",
-    "platform": "Play Station 4"
+    "platform": "Play Station 4",
+    "pegi": "18+"
 }
 ```
 *Respuesta:* 201 CREATED
@@ -68,7 +84,8 @@ Ejemplo:
 {
     "id": "60a35e8e96d3b160b7527dee",
     "name": "Until Dawn",
-    "platform": "Play Station 4"
+    "platform": "Play Station 4",
+    "pegi": "18+"
 }
 ```
 ### Actualizar un juego
@@ -107,3 +124,42 @@ Ejemplo:
 
 *Respuesta:* 200 OK
 
+## FILTROS
+
+### Listar todas las plataformas distintas
+**GET**
+```
+endpoint: /api/filter/platforms
+puerto : 8080
+```
+Ejemplo:
+
+*Llamada:* `/api/filter/platforms`
+
+*Respuesta:* 200 OK
+```
+[
+    "Play Station 3",
+    "Play Station 4",
+    "Switch"
+]
+```
+
+### Listar todos los pegis distintas
+**GET**
+```
+endpoint: /api/filter/pegis
+puerto : 8080
+```
+Ejemplo:
+
+*Llamada:* `/api/filter/pegis`
+
+*Respuesta:* 200 OK
+```
+[
+    "16+",
+    "18+",
+    "7+"
+]
+```

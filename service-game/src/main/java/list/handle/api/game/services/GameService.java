@@ -15,4 +15,5 @@ public interface GameService {
     GameInfoDTO updateGame(GameInfoDTO gameInfo);
 
     void deleteGame(String id);
+
 }
