@@ -329,7 +329,7 @@ Ejemplo 3:
 ```
 
 
-##Llamadas para pruebas <a name="generar-juegos"></a>
+## Llamadas para pruebas <a name="generar-juegos"></a>
 Elimina la base de datos por completo, genera de golpe 10 juegos y los devuelve en orden de posición.
 
 

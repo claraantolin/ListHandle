@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8d2b90b-51ac-4534-b914-fbff191db0a2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Documentacion.md" beforeDir="false" afterPath="$PROJECT_DIR$/Documentacion.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-game/src/main/java/list/handle/api/game/controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-game/src/main/java/list/handle/api/game/controllers/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-game/src/main/java/list/handle/api/game/models/GameInfoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-game/src/main/java/list/handle/api/game/models/GameInfoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-game/src/main/java/list/handle/api/game/services/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-game/src/main/java/list/handle/api/game/services/GameService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-game/src/main/java/list/handle/api/game/services/GameServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-game/src/main/java/list/handle/api/game/services/GameServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
