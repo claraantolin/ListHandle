@@ -2,7 +2,7 @@
 
 ## JUEGOS
 
-###Estructura de un juego:
+### Estructura de un juego:
 ```
 {
     id: String (identificador del juego),
@@ -15,7 +15,7 @@
 
 ## Llamadas api
 
-##Índice:
+## Índice:
 1. [Listar todos los juegos: [GET] /api/games/](#listar-juegos)
 2. [Obtener un juego: [GET] /api/games/game/{id}](#obtener-juego)
 3. [Insertar un juego: [POST] /api/games/game](#insertar-juego)
