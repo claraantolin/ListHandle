@@ -9,12 +9,16 @@ public class GameInfoDTO {
     @Id
     private String id;
     private String name;
+    private int position;
     private String platform;
     private String pegi;
 
-    public GameInfoDTO(String id, String name, String platform, String pegi) {
+    public GameInfoDTO() {}
+
+    public GameInfoDTO(String id, String name, int position, String platform, String pegi) {
         this.id = id;
         this.name = name;
+        this.position = position;
         this.platform = platform;
         this.pegi = pegi;
     }
@@ -49,5 +53,13 @@ public class GameInfoDTO {
 
     public void setPegi(String pegi) {
         this.pegi = pegi;
+    }
+
+    public int getPosition() {
+        return position;
+    }
+
+    public void setPosition(int position) {
+        this.position = position;
     }
 }

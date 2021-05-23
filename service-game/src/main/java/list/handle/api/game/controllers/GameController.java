@@ -44,4 +44,18 @@ public class GameController {
         service.deleteGame(id);
     }
 
+    @DeleteMapping("/")
+    public void deleteAllGames() {
+        service.deleteAllGames();
+    }
+
+    @PutMapping("/game/{id}/position")
+    public ResponseEntity<GameInfoDTO> updatePositionGame(@PathVariable("id") String id, @RequestBody GameInfoDTO infoPosition) {
+        return ResponseEntity.ok(service.updatePositionGame(id, infoPosition.getPosition()));
+    }
+
+    @PostMapping("/")
+    public List<GameInfoDTO> generateGames() {
+        return service.generateGames();
+    }
 }

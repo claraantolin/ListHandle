@@ -14,6 +14,12 @@ public interface GameService {
 
     GameInfoDTO updateGame(GameInfoDTO gameInfo);
 
+    GameInfoDTO updatePositionGame(String id, int position);
+
     void deleteGame(String id);
+
+    void deleteAllGames();
+
+    List<GameInfoDTO> generateGames();
 
 }
